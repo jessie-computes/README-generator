@@ -1,12 +1,38 @@
-const questions = [
+const fs = require("fs");
+const axios = require("axios");
+const inquirer = require("inquirer");
+const util = require("util")
 
-];
+//use a map function to save data for each question to a new array of objects
+const questions = [];
+const dataObj = [];
+var avatarURL = "";
 
-function writeToFile(fileName, data) {
-}
+inquirer
+    .prompt({
+        message: "Enter your GitHub username.",
+        name: "username"
+    })  
+    .then(function({ username }) {
+        const queryUrl = `https://api.github.com/users/${username}`;
+        axios
+            .get(queryUrl)
+            .then(function(response){
+                dataObj.push(response.data);
+                avatarURL = response.data.avatar_url
+                
+            })            
+            .catch(function(err){
+                console.log(err)
+            });
+    })
+    .catch(function(err){
+        console.log(err)
+    });
 
-function init() {
 
-}
+// function writeToFile(fileName, data) {}
 
-init();
+// function init() {}
+
+// init();
