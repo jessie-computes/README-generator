@@ -12,6 +12,11 @@ function writeTheReadme() {
         name: "username"
       },
       {
+          type: "input",
+          message: "Please add badge code for your README",
+          name: "badge"
+      },
+      {
         type: "input",
         name: "title",
         message: "What is your project title?"
@@ -52,7 +57,7 @@ function writeTheReadme() {
 
       axios.get(queryUrl).then(function(res) {
         avatar_url = res.data.avatar_url;
-        let contentReadme = `# ${data.title} \n ${data.description} \n## Table of Contents \n* Installation \n* Usage \n* License \n* Contributing \n* Tests \n* Questions \n## Installation \n${data.installation} \n## Usage \n${data.usage} \n## License \n${data.license} \n## Contributing \n${data.contributing} \n## Tests \n${data.tests} \n## Questions - Contact \nGitHub Profile Image: \n![GitHub profile image](${avatar_url})`;
+        let contentReadme = `# ${data.title} \n ${data.description} \n##Badge \n${data.badge} \n##Table of Contents \n* Installation \n* Usage \n* License \n* Contributing \n* Tests \n* Questions \n## Installation \n${data.installation} \n## Usage \n${data.usage} \n## License \n${data.license} \n## Contributing \n${data.contributing} \n## Tests \n${data.tests} \n## Questions - Contact \nGitHub Profile Image: \n![GitHub profile image](${avatar_url})`;
 
         fs.writeFile("README.md", contentReadme, function(err) {
           if (err) {
