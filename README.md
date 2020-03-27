@@ -1,5 +1,7 @@
-# Brew-2-You 
- This is a functional application that allows users to find and go to local breweries. 
+# README Generator 
+This project dynamically creates individual READMEs for different projects throug user input. 
+## Badge 
+![GitHub Badge](https://img.shields.io/badge/awesome-You%20rock%20%3C3-red) 
 ## Table of Contents 
 * Installation 
 * Usage 
@@ -8,14 +10,15 @@
 * Tests 
 * Questions 
 ## Installation 
-carefully 
+Carefully 
 ## Usage 
-Finding local breweries! 
+Users can use this project to generate READMEs for their projects on GitHub. 
 ## License 
-to me 
+MIT License 
 ## Contributing 
-Zack Hayden and Ricardo Russ 
+Jessie Everett 
 ## Tests 
-ok 
+Users can download the files to generate a README. 
 ## Questions - Contact 
-GitHub URL: ![GitHub profile image](https://avatars0.githubusercontent.com/u/60405600?v=4)
+GitHub Profile Image: 
+![GitHub profile image](https://avatars0.githubusercontent.com/u/60405600?v=4)
