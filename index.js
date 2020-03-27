@@ -57,7 +57,7 @@ function writeTheReadme() {
 
       axios.get(queryUrl).then(function(res) {
         avatar_url = res.data.avatar_url;
-        let contentReadme = `# ${data.title} \n ${data.description} \n##Badge \n${data.badge} \n##Table of Contents \n* Installation \n* Usage \n* License \n* Contributing \n* Tests \n* Questions \n## Installation \n${data.installation} \n## Usage \n${data.usage} \n## License \n${data.license} \n## Contributing \n${data.contributing} \n## Tests \n${data.tests} \n## Questions - Contact \nGitHub Profile Image: \n![GitHub profile image](${avatar_url})`;
+        let contentReadme = `# ${data.title} \n${data.description} \n## Badge \n![GitHub Badge](${data.badge}) \n## Table of Contents \n* Installation \n* Usage \n* License \n* Contributing \n* Tests \n* Questions \n## Installation \n${data.installation} \n## Usage \n${data.usage} \n## License \n${data.license} \n## Contributing \n${data.contributing} \n## Tests \n${data.tests} \n## Questions - Contact \n![GitHub profile image](${avatar_url})`;
 
         fs.writeFile("README.md", contentReadme, function(err) {
           if (err) {
