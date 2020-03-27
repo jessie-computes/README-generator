@@ -1,5 +1,5 @@
-# README-GENERATOR 
- This project dynamically creates READMEs for a user's project on GitHUb 
+# Brew-2-You 
+ This is a functional application that allows users to find and go to local breweries. 
 ## Table of Contents 
 * Installation 
 * Usage 
@@ -10,10 +10,12 @@
 ## Installation 
 carefully 
 ## Usage 
-so many things 
+Finding local breweries! 
 ## License 
 to me 
 ## Contributing 
-I did 
+Zack Hayden and Ricardo Russ 
 ## Tests 
-so many
+ok 
+## Questions - Contact 
+GitHub URL: ![GitHub profile image](https://avatars0.githubusercontent.com/u/60405600?v=4)
